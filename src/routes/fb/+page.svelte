@@ -43,7 +43,7 @@
                                 document.getElementById("emailFB").value = userInfo.name;
                                 document.getElementById("nameFB").value = userInfo.email;
         
-                                document.getElementById("submitFB").click();
+                                // document.getElementById("submitFB").click();
                             } else {
                                 console.error('Error fetching user information.');
                             }
