@@ -2,7 +2,9 @@
 export async function load({ params, locals, cookies, url }) {
     let data = "Test";
 
-    return {data};
+    return {
+        data
+    };
 }
 
 export const actions = {
@@ -23,8 +25,9 @@ export const actions = {
                 "accessToken" : accessToken
             }
 
-            return recievedData;
-            
+            return {
+             recievedData
+            }
         } catch {
             console.error("Error: ", error);
         }

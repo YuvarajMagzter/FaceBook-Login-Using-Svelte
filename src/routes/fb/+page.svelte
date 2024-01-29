@@ -1,13 +1,10 @@
 
 <script>
     let token;
-<<<<<<< HEAD
-=======
     export let form;
     export let data;
 
     console.log(form, "form-data");
->>>>>>> b22ea61 (Initial Commit)
 </script>
 
 <svelte:head>
@@ -17,6 +14,8 @@
 <body onload="generateRecaptcha(); onFBLoad();">
     
     <h1>Log in by facebook</h1>
+
+    <p>{form?.recievedData}</p>
 
     <button onclick="signInWithFB()">Facebook</button>
 
@@ -50,7 +49,7 @@
                                 document.getElementById("emailFB").value = userInfo.name;
                                 document.getElementById("nameFB").value = userInfo.email;
         
-                                // document.getElementById("submitFB").click();
+                                document.getElementById("submitFB").click();
                             } else {
                                 console.error('Error fetching user information.');
                             }
