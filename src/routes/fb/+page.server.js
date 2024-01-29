@@ -25,6 +25,8 @@ export const actions = {
                 "accessToken" : accessToken
             }
 
+            console.log(recievedData, "recieved data....");
+
             return {
              recievedData
             }
