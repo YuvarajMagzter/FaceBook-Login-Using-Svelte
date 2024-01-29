@@ -1,6 +1,13 @@
 
 <script>
     let token;
+<<<<<<< HEAD
+=======
+    export let form;
+    export let data;
+
+    console.log(form, "form-data");
+>>>>>>> b22ea61 (Initial Commit)
 </script>
 
 <svelte:head>
