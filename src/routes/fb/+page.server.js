@@ -33,7 +33,5 @@ export const actions = {
         } catch {
             console.error("Error: ", error);
         }
-
-
     }
 }
