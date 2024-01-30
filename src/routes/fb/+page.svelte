@@ -16,6 +16,12 @@
     <h1>Log in by facebook</h1>
 
     <p>{form?.recievedData}</p>
+    {#if form?.recievedData?.accessToken}
+     <p>Access Token - {form?.recievedData?.accessToken}</p>
+     <p>Email - {form?.recievedData?.email}</p>
+     <p>FB Id - {form?.recievedData?.fbid}</p>
+     <p>F name - {form?.recievedData?.fbName}</p>
+    {/if}
 
     <button onclick="signInWithFB()">Facebook</button>
 
